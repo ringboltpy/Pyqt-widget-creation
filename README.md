@@ -1,5 +1,6 @@
 # Pyqt-widget-creation
 First and foremost, import all necessary libraries.
+
 from PyQt5.QtWidgets import (
     for example: QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout, QMessageBox, QGridLayout
 )
@@ -14,6 +15,7 @@ class App(QWidget):
 Now in def init_ui(self) you can start creating.
 
 **1. Creating input fields**
+
 We need to use QLineEdit to allow the user to type in information.
 self.name_input = QLineEdit()
 
@@ -21,6 +23,7 @@ Labels will help describe what each input field is for.
 QLabel("name")
 
 **2. Creating buttons**
+
 First let's create a button using QPushButton.
 btn_name = QPushButton("functionality")
 
@@ -28,6 +31,7 @@ Next, you can add functionality to the button. To do this we use clicked.connect
 btn_name.clicked.connect(self.function)
 
 **3. Making grid**
+
 Use QGridLayout to place widgets in a grid — rows and columns — to make your UI organized.
 grid = QGridLayout()
 
