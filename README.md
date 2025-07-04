@@ -1,4 +1,8 @@
 # Pyqt-widget-creation
+First and foremost, import all necessary libraries.
+from PyQt5.QtWidgets import (
+    for example: QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout, QMessageBox, QGridLayout
+)
 
 Create a class that inherits from QWidget. This will be your main application window.
 class App(QWidget):
@@ -6,6 +10,8 @@ class App(QWidget):
         super().__init__()
         self.setWindowTitle("window name")
         self.init_ui()
+
+Now in def init_ui(self) you can start creating.
 
 **1. Creating input fields**
 We need to use QLineEdit to allow the user to type in information.
